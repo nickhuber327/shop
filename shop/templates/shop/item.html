@@ -1,0 +1,12 @@
+{% extends "shop/header.html" %}
+
+{% block content %}
+	<h3>{{ item.name }}</h3>
+	<img src="{{item.image}}"
+	<p>{{ item.description|safe|linebreaks }}</p>
+	Price: ${{ item.price}}
+	Sold: {{item.sold}}<br/>
+	Rating: {{item.rating}}/5
+	
+	
+{% endblock %}

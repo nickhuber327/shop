@@ -1,0 +1,17 @@
+{% extends "shop/header.html" %}
+{% block content %}
+	{% for item in object_list %}
+		<div class="column">
+		  <div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+			  <img src="{{item.image}}" alt="{{item.name}}">
+			  <div class="caption">
+				<h3>{{ item.name }}</h3>
+				<p>{{ item.description|truncatechars_html:25}}</p>
+				<p><a href="/shop/{{item.id}}" class="btn btn-primary" role="button">View</a></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	{% endfor %}
+{% endblock %}
