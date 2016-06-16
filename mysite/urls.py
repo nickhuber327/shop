@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^', include('shop.urls')),
     url(r'^blog/', include('blog.urls')),
     url(r'^aboutus/', include('personal.urls')),
+    url(r'^shop/', include('shop.urls')),
 ]
