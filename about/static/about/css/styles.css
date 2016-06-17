@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+}
+hr {
+	color: blue;
+	background-color: blue;
+	background: blue;
+	height:2px;
+	border:0px;
+}
+a {
+	color: blue;
+}
