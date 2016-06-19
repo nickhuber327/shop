@@ -1,20 +1,24 @@
 {% extends "about/header.html" %}
 {% block content %}
 	{% for post in object_list %}
-		<h5>
-			{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a>
-		</h5>
+		<div class="row">
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <div class="caption">
+			<h3>{{ post.title }}</h3>
+			<p>
+			  {{ post.date|date:"Y-m-d" }}
+			  <br/>
+			  {{ post.body }}
+			</p>
+			<p>
+				<a href="{{ post.id }}" class="btn btn-primary" role="button">
+					View
+				</a>
+			</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	{% endfor %}
 {% endblock %}
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-</div>
