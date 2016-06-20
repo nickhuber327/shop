@@ -1,7 +1,6 @@
 {% extends "about/header.html" %}
 {% block content %}
 	{% for post in object_list %}
-<<<<<<< HEAD
 		<div class="column">
 		  <div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
@@ -21,28 +20,5 @@
 			</div>
 		  </div>
 		</div>
-=======
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>
-                            {{ post.title }}
-                        </h3>
-                        <p>
-                            {{ post.date|date:"Y-m-d" }}
-                            <br/>
-                            {{ post.body }}
-                        </p>
-                        <p>
-                            <a href="{{ post.id }}" class="btn btn-primary" role="button">
-                                View
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
->>>>>>> 6482c091dcbee2ba8baf683e142a9f288bf39e47
 	{% endfor %}
 {% endblock %}
