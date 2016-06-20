@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
 	<title>Nick Huber</title>
@@ -82,4 +83,78 @@
 	
 </body>
 
+=======
+    <head>
+        <title>Nick Huber</title>
+        <meta charset="utf-8" />
+        {% load staticfiles %}
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'about/css/styles.css' %}" type="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </head>
+    <body class="body">
+        <div class="container-fluid" style="min-height:95%;">
+            <div class="row">
+                  
+                  <div class="col-sm-10">
+                      <br>
+                      <center>
+                        <h3>
+                            About Us
+                        </h3>
+                      </center>
+                  </div>
+            </div>
+            <hr/>
+            <div class="row">
+              <div class="col-sm-2">
+              <br/>
+              <br/>
+                <div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+                  <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href='/about'>
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/blog/'>
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/'>
+                            Store
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-10">
+              
+                <div class='container-fluid'>
+                    <br/>
+                    <br/>
+                   {% block content %}
+                   {% endblock %}	
+                </div>
+              </div>
+            </div> 
+        </div>
+        <footer>
+            <div class="container-fluid" style='margin-left:15px'>
+                <p>
+                    <a href="/about/contact" target="blank">
+                        Contact
+                    </a>
+                </p>
+            </div>
+        </footer>	
+    </body>
+>>>>>>> 6482c091dcbee2ba8baf683e142a9f288bf39e47
 </html>
