@@ -11,7 +11,15 @@ hr {
 a {
 	color: blue;
 }
-.btn-primary{
+.btn-primary {
 	background: blue;
 	background-color: blue;
+}
+.well {
+    background: white;
+    background-color: white;
+    border-color: #C4C3B9;
+}
+.thumbnail {
+    border-color: #C4C3B9;
 }
