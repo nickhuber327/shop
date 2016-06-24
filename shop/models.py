@@ -8,7 +8,7 @@ class Item(models.Model):
     stock = models.IntegerField()
     sold = models.IntegerField()
     rating = models.FloatField()
-    image = models.ImageField(upload_to="static/shop/img/")
+    image = models.ImageField(upload_to="shop/static/shop/img/")
 
     def __str__(self):
         return self.name
